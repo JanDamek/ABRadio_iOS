@@ -1,0 +1,102 @@
+
+/* Class = "UIBarButtonItem"; title = "Kategorie"; ObjectID = "2rb-L8-0XX"; */
+"2rb-L8-0XX.title" = "Category";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "3zh-HT-ofU"; */
+"3zh-HT-ofU.text" = "Subtitle";
+
+/* Class = "UISearchBar"; placeholder = "Hledat"; ObjectID = "4Pg-MU-9YZ"; */
+"4Pg-MU-9YZ.placeholder" = "Search";
+
+/* Class = "UILabel"; text = "0 min"; ObjectID = "5RA-Gi-eTl"; */
+"5RA-Gi-eTl.text" = "0 min";
+
+/* Class = "UINavigationItem"; title = "ABradio"; ObjectID = "8H2-gx-pmZ"; */
+"8H2-gx-pmZ.title" = "ABradio";
+
+/* Class = "UINavigationItem"; title = "Oblíbené"; ObjectID = "At2-gx-Oxr"; */
+"At2-gx-Oxr.title" = "Fovorite";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "FtJ-RO-iwk"; */
+"FtJ-RO-iwk.title" = "Item";
+
+/* Class = "UIBarButtonItem"; title = "Zpět"; ObjectID = "I9j-SR-fnx"; */
+"I9j-SR-fnx.title" = "Back";
+
+/* Class = "UIBarButtonItem"; title = "Zpět"; ObjectID = "IRG-5T-KDT"; */
+"IRG-5T-KDT.title" = "Back";
+
+/* Class = "UIBarButtonItem"; title = "Hraje"; ObjectID = "KAt-x3-0Jc"; */
+"KAt-x3-0Jc.title" = "Play";
+
+/* Class = "UIBarButtonItem"; title = "Zpět"; ObjectID = "KLI-4q-KKs"; */
+"KLI-4q-KKs.title" = "Back";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "M1y-s1-b7u"; */
+"M1y-s1-b7u.text" = "Title";
+
+/* Class = "UILabel"; text = "Krátký slogan rádia"; ObjectID = "MjX-GN-DDI"; */
+"MjX-GN-DDI.text" = "Short radio description";
+
+/* Class = "UINavigationItem"; title = "Program"; ObjectID = "NHy-pn-bMk"; */
+"NHy-pn-bMk.title" = "Program";
+
+/* Class = "UITabBarItem"; title = "Favourites"; ObjectID = "NNr-1i-lGa"; */
+"NNr-1i-lGa.title" = "Favourites";
+
+/* Class = "UITabBarItem"; title = "Web"; ObjectID = "OXw-iE-0lt"; */
+"OXw-iE-0lt.title" = "Web";
+
+/* Class = "UIBarButtonItem"; title = "Hraje"; ObjectID = "U1t-Rh-Zgc"; */
+"U1t-Rh-Zgc.title" = "Play";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "VTR-rL-lVB"; */
+"VTR-rL-lVB.text" = "Title";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "Y4s-1x-BxB"; */
+"Y4s-1x-BxB.text" = "Title";
+
+/* Class = "UINavigationItem"; title = "Kategorie radii/vypis radii"; ObjectID = "ZLm-w9-ar3"; */
+"ZLm-w9-ar3.title" = "Radio category/radio list";
+
+/* Class = "UILabel"; text = "Právě hraje:"; ObjectID = "ZYA-Nj-DEQ"; */
+"ZYA-Nj-DEQ.text" = "Now playing:";
+
+/* Class = "UIBarButtonItem"; title = "Zpět"; ObjectID = "akz-Pb-eOi"; */
+"akz-Pb-eOi.title" = "Back";
+
+/* Class = "UILabel"; text = "Český Rozhlas "; ObjectID = "awj-bK-ku0"; */
+"awj-bK-ku0.text" = "Český Rozhlas ";
+
+/* Class = "UIImageView"; accessibilityLabel = "artwork"; ObjectID = "fwH-nh-TNe"; */
+"fwH-nh-TNe.accessibilityLabel" = "artwork";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "hsg-c3-eAT"; */
+"hsg-c3-eAT.title" = "Home";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "jCm-iC-2Hv"; */
+"jCm-iC-2Hv.text" = "Title";
+
+/* Class = "UINavigationItem"; title = "ABradio"; ObjectID = "lHi-Mq-EA1"; */
+"lHi-Mq-EA1.title" = "ABradio";
+
+/* Class = "UITabBarItem"; title = "Listens"; ObjectID = "lob-wr-3Jk"; */
+"lob-wr-3Jk.title" = "Listens";
+
+/* Class = "UIImageView"; accessibilityLabel = "logo"; ObjectID = "qvM-2j-bqQ"; */
+"qvM-2j-bqQ.accessibilityLabel" = "logo";
+
+/* Class = "UIBarButtonItem"; title = "Hraje"; ObjectID = "ua4-eM-zHW"; */
+"ua4-eM-zHW.title" = "Play";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "vSc-Fl-R8L"; */
+"vSc-Fl-R8L.text" = "Subtitle";
+
+/* Class = "UIBarButtonItem"; title = "Hraje"; ObjectID = "x4P-KA-dfM"; */
+"x4P-KA-dfM.title" = "Play";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "xhS-yI-RZS"; */
+"xhS-yI-RZS.text" = "Subtitle";
+
+/* Class = "UINavigationItem"; title = "Poslouchané"; ObjectID = "yqJ-na-9In"; */
+"yqJ-na-9In.title" = "History";
