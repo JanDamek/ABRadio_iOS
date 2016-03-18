@@ -121,7 +121,6 @@
 		F58298D5182C4BC10060C3C4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58298D4182C4BC10060C3C4 /* StoreKit.framework */; };
 		F58298D7182C50D70060C3C4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F58298D6182C50D70060C3C4 /* Images.xcassets */; };
 		F5C42275181C580700BBEC38 /* comInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C42274181C580700BBEC38 /* comInfoViewController.m */; };
-		F5CA0B4D182AF16400E01AFE /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CA0B4C182AF16400E01AFE /* AdSupport.framework */; };
 		F5CA0B5B182AF6F500E01AFE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CA0B5A182AF6F500E01AFE /* CoreData.framework */; };
 		F5DBEAEB181D0E0F00603C9C /* 114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DBEAC7181D0E0F00603C9C /* 114x114.png */; };
 		F5DBEAEC181D0E0F00603C9C /* 144x144.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DBEAC8181D0E0F00603C9C /* 144x144.png */; };
@@ -302,7 +301,6 @@
 		F58298D6182C50D70060C3C4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F5C42273181C580700BBEC38 /* comInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comInfoViewController.h; sourceTree = "<group>"; };
 		F5C42274181C580700BBEC38 /* comInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = comInfoViewController.m; sourceTree = "<group>"; };
-		F5CA0B4C182AF16400E01AFE /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		F5CA0B5A182AF6F500E01AFE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		F5DBEA87181CFCCE00603C9C /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		F5DBEAC7181D0E0F00603C9C /* 114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114x114.png; sourceTree = "<group>"; };
@@ -346,7 +344,6 @@
 				EBAA78B61C8704380034BCDD /* iAd.framework in Frameworks */,
 				F58298D5182C4BC10060C3C4 /* StoreKit.framework in Frameworks */,
 				F5CA0B5B182AF6F500E01AFE /* CoreData.framework in Frameworks */,
-				F5CA0B4D182AF16400E01AFE /* AdSupport.framework in Frameworks */,
 				342C2C4E1566E1AF00642692 /* CoreMedia.framework in Frameworks */,
 				34FA5B5514FAB058004AC849 /* QuartzCore.framework in Frameworks */,
 				341BEF3D14F6DB71007DE2BF /* MediaPlayer.framework in Frameworks */,
@@ -411,7 +408,6 @@
 				EBAA78B51C8704380034BCDD /* iAd.framework */,
 				F58298D4182C4BC10060C3C4 /* StoreKit.framework */,
 				F5CA0B5A182AF6F500E01AFE /* CoreData.framework */,
-				F5CA0B4C182AF16400E01AFE /* AdSupport.framework */,
 				342C2C4D1566E1AF00642692 /* CoreMedia.framework */,
 				34FA5B5414FAB058004AC849 /* QuartzCore.framework */,
 				341BEF3C14F6DB71007DE2BF /* MediaPlayer.framework */,
