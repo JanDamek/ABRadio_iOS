@@ -5,11 +5,15 @@
 //  Created by Jan Damek on /224/12.
 //  Copyright (c) 2012 droidsoft.eu. All rights reserved.
 //
+@import GoogleMobileAds;
 
 #import "comWebViewController.h"
 #import "comAppDelegate.h"
+#import "ServiceTools.h"
 
 @interface comWebViewController ()
+
+@property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
 
 @end
 
@@ -50,16 +54,12 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-    self.canDisplayBannerAds = true;
+    [ServiceTools GADInitialization:bannerView rootViewController:self];
 
 	// Do any additional setup after loading the view.
     
     [webview setDelegate:self];
     [webview setScalesPageToFit:YES];
-//    if (bannerView){
-//        GADBannerView *banner = [comAppDelegate getBanner];
-//        [bannerView addSubview:banner];
-//    }
     
     UIToolbar *tb = [UIToolbar appearance];
     if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {

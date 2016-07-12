@@ -6,6 +6,8 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
+@import GoogleMobileAds;
+
 #import "comPlayerViewController.h"
 #import <UIKit/UIKit.h>
 #import <SystemConfiguration/SCNetworkReachability.h>
@@ -17,7 +19,30 @@
 #import "comWebViewController.h"
 #import "comAppDelegate.h"
 #import "comContactViewController.h"
-//#include "GAITracker.h"
+#import "ServiceTools.h"
+
+@interface comPlayerViewController ()
+
+@property BOOL program;
+
+@property (atomic, strong) IBOutlet UIImageView *logoImage;
+@property (atomic, strong) IBOutlet UIImageView *artImageView;
+@property (atomic, strong) IBOutlet UITextView *descriptionTextView;
+@property (atomic, strong) IBOutlet UIButton *oblibeneBtn;
+@property (atomic, strong) IBOutlet UIButton *sleepBtn;
+@property (atomic, strong) IBOutlet UIButton *programBtn;
+@property (atomic, strong) IBOutlet UILabel *sleepTime;
+@property (atomic, strong) IBOutlet UILabel *radioLabel;
+@property (atomic, strong) IBOutlet UILabel *radioSlogan;
+@property (atomic, strong) IBOutlet UIActivityIndicatorView *activity;
+@property (atomic, strong) IBOutlet UIButton *oblibeneMinBtn;
+@property (atomic, strong) IBOutlet UIView *volumeView;
+@property (weak, nonatomic) IBOutlet UIButton *playBtn;
+@property (weak, nonatomic) IBOutlet UIButton *stopBtn;
+
+@property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
+
+@end
 
 NSString *kURLFacebook = @"http://www.facebook.com/pages/ABradiocz/111460366985";
 
@@ -26,7 +51,7 @@ NSString *kURLFacebook = @"http://www.facebook.com/pages/ABradiocz/111460366985"
 @synthesize
     logoImage, descriptionTextView, artImageView, playBtn,
     sleepBtn, sleepTime, oblibeneBtn, radioLabel, stopBtn,
-    activity, radioSlogan, programBtn, oblibeneMinBtn;
+    activity, radioSlogan, programBtn, oblibeneMinBtn, bannerView, program;
 
 -(IBAction)infoTouch:(id)sender{
         program = YES;
@@ -67,12 +92,8 @@ NSString *kURLFacebook = @"http://www.facebook.com/pages/ABradiocz/111460366985"
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-    self.canDisplayBannerAds = true;
 
     comAppDelegate *_delegate = (comAppDelegate*)[[UIApplication sharedApplication] delegate];
-    
-//    self.tracker = _delegate.tracker;
-//    self.screenName = @"Player View";
     
     NSString *lo;
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
@@ -85,7 +106,8 @@ NSString *kURLFacebook = @"http://www.facebook.com/pages/ABradiocz/111460366985"
     MPVolumeView *myVolumeView = [[MPVolumeView alloc] initWithFrame: r];
         [myVolumeView setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin];
     [[self volumeView] addSubview:myVolumeView];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    [ServiceTools GADInitialization:bannerView rootViewController:self];
 }
 
 -(void) setupOblibeneImage
@@ -107,9 +129,6 @@ NSString *kURLFacebook = @"http://www.facebook.com/pages/ABradiocz/111460366985"
     comAppDelegate *_delegate = (comAppDelegate*)[[UIApplication sharedApplication] delegate];
     
     [super viewDidAppear:animated];
-    
-//    GADBannerView *banner = [comAppDelegate getBanner];
-//    [bannerView addSubview:banner];
     
     _delegate.descriptionTextView=descriptionTextView;
     _delegate.artImageView=artImageView;

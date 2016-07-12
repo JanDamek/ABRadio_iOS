@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <iAd/iAd.h>
 
-@interface comKategorieListViewController : UITableViewController <UISearchBarDelegate, ADBannerViewDelegate>{
+@interface comKategorieListViewController : UITableViewController <UISearchBarDelegate>{
         UISearchBar *sBar; 
 }
 @property (atomic, strong) IBOutlet UISearchBar *sBar;

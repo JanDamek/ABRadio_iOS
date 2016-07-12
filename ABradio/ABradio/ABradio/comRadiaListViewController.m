@@ -6,10 +6,13 @@
 //  Copyright (c) 2012 droidsoft.eu. All rights reserved.
 //
 
+@import GoogleMobileAds;
+
 #import "comRadiaListViewController.h"
 #import "AsyncImageView.h"
 #import "comPlayerViewController.h"
 #import "comAppDelegate.h"
+#import "ServiceTools.h"
 
 
 @implementation comRadiaListViewController
@@ -169,7 +172,9 @@
 -(void)viewDidLoad{
     [super viewDidLoad];
     
-    self.canDisplayBannerAds = true;
+    GADBannerView *bannerView = [[GADBannerView alloc]initWithAdSize:kGADAdSizeBanner];
+    [self.tableView setTableFooterView:bannerView];
+    [ServiceTools GADInitialization:bannerView rootViewController:self];
 }
 
 

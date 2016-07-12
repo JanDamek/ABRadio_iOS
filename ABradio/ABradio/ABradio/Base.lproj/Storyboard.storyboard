@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3Ae-yn-GOK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3Ae-yn-GOK">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -192,7 +192,7 @@
                                 </variation>
                             </label>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="fwH-nh-TNe" userLabel="artwork">
-                                <rect key="frame" x="110" y="207" width="470" height="251"/>
+                                <rect key="frame" x="110" y="207" width="470" height="222"/>
                                 <accessibility key="accessibilityConfiguration" label="artwork"/>
                                 <variation key="heightClass=compact" misplaced="YES">
                                     <rect key="frame" x="110" y="136" width="356" height="122"/>
@@ -540,10 +540,19 @@
                                     <rect key="frame" x="32" y="28" width="734" height="17"/>
                                 </variation>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xu7-sE-UIO" customClass="GADBannerView">
+                                <rect key="frame" x="140" y="437" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="BHL-Nz-t5a"/>
+                                    <constraint firstAttribute="height" constant="50" id="plN-iR-fNv"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="eVA-rf-kkB" firstAttribute="centerX" secondItem="m38-9c-bXi" secondAttribute="centerX" id="27G-eA-raX"/>
+                            <constraint firstItem="Xu7-sE-UIO" firstAttribute="top" secondItem="fwH-nh-TNe" secondAttribute="bottom" constant="8" symbolic="YES" id="4VY-eb-Z69"/>
                             <constraint firstItem="9tJ-Dp-3Fe" firstAttribute="leading" secondItem="0Qg-VB-uZF" secondAttribute="leadingMargin" id="51Q-U2-PPy"/>
                             <constraint firstItem="mc2-UB-EMt" firstAttribute="top" secondItem="bjL-xc-QYS" secondAttribute="bottom" constant="8" symbolic="YES" id="6Cd-3k-Tn5"/>
                             <constraint firstItem="eVA-rf-kkB" firstAttribute="bottom" secondItem="vAt-We-hor" secondAttribute="top" id="8Vi-9e-7ed"/>
@@ -584,8 +593,9 @@
                             <constraint firstItem="k0K-tM-2BJ" firstAttribute="trailing" secondItem="bjL-xc-QYS" secondAttribute="trailing" id="bzq-ni-akf"/>
                             <constraint firstItem="m38-9c-bXi" firstAttribute="leading" secondItem="0Zx-bm-DMo" secondAttribute="leading" id="cyG-up-THN"/>
                             <constraint firstItem="qvM-2j-bqQ" firstAttribute="top" secondItem="awj-bK-ku0" secondAttribute="top" id="duo-JV-yzO"/>
+                            <constraint firstItem="Xu7-sE-UIO" firstAttribute="centerX" secondItem="N04-zy-5R2" secondAttribute="centerX" id="eag-ri-Tyk"/>
                             <constraint firstItem="ZYA-Nj-DEQ" firstAttribute="centerX" secondItem="MjX-GN-DDI" secondAttribute="centerX" id="ewq-ed-hTI"/>
-                            <constraint firstItem="vAt-We-hor" firstAttribute="top" secondItem="fwH-nh-TNe" secondAttribute="bottom" constant="29" id="fPX-Jy-Cxq"/>
+                            <constraint firstItem="vAt-We-hor" firstAttribute="top" secondItem="fwH-nh-TNe" secondAttribute="bottom" constant="58" id="fPX-Jy-Cxq"/>
                             <constraint firstItem="gmS-GL-6hk" firstAttribute="leading" secondItem="QFJ-Wn-DHg" secondAttribute="leading" id="gMV-87-l6L"/>
                             <constraint firstItem="fwH-nh-TNe" firstAttribute="trailing" secondItem="m38-9c-bXi" secondAttribute="trailing" id="h6b-cV-2fs"/>
                             <constraint firstAttribute="trailingMargin" secondItem="awj-bK-ku0" secondAttribute="trailing" constant="5" id="hUY-qJ-1Jf"/>
@@ -618,6 +628,7 @@
                     <connections>
                         <outlet property="activity" destination="N04-zy-5R2" id="dNx-om-aHd"/>
                         <outlet property="artImageView" destination="fwH-nh-TNe" id="pgA-Dq-M6W"/>
+                        <outlet property="bannerView" destination="Xu7-sE-UIO" id="DQs-7R-Zkh"/>
                         <outlet property="descriptionTextView" destination="m38-9c-bXi" id="hSY-Zo-oW3"/>
                         <outlet property="logoImage" destination="qvM-2j-bqQ" id="4bL-Jh-ugf"/>
                         <outlet property="oblibeneBtn" destination="aJu-3Y-P4N" id="sWp-t2-Kdd"/>
@@ -726,12 +737,24 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SBs-lW-xne" customClass="GADBannerView">
+                                <rect key="frame" x="280" y="437" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Gd4-cj-nah"/>
+                                    <constraint firstAttribute="width" constant="320" id="NPF-6n-smK"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="SBs-lW-xne" firstAttribute="trailing" secondItem="Qq3-gP-RDv" secondAttribute="trailing" id="4MA-if-Kwx"/>
                             <constraint firstItem="Qq3-gP-RDv" firstAttribute="bottom" secondItem="0XE-aP-zQT" secondAttribute="top" id="5QR-kT-TWb"/>
+                            <constraint firstItem="SBs-lW-xne" firstAttribute="bottom" secondItem="0XE-aP-zQT" secondAttribute="top" id="CLa-r6-RNa"/>
                             <constraint firstAttribute="trailing" secondItem="Qq3-gP-RDv" secondAttribute="trailing" id="TLB-iX-0c7"/>
                             <constraint firstItem="Qq3-gP-RDv" firstAttribute="leading" secondItem="iMJ-Rv-ggw" secondAttribute="leading" id="VdD-q6-HR7"/>
+                            <constraint firstItem="SBs-lW-xne" firstAttribute="top" secondItem="tTd-f8-LZ5" secondAttribute="bottom" constant="437" id="bqz-To-3Wd"/>
+                            <constraint firstItem="SBs-lW-xne" firstAttribute="leading" secondItem="iMJ-Rv-ggw" secondAttribute="leading" constant="280" id="qR6-YJ-PYc"/>
                             <constraint firstItem="Qq3-gP-RDv" firstAttribute="top" secondItem="tTd-f8-LZ5" secondAttribute="bottom" id="xTg-sS-lv9"/>
                         </constraints>
                     </view>
@@ -743,6 +766,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="bannerView" destination="SBs-lW-xne" id="syG-B2-58A"/>
                         <outlet property="webview" destination="Qq3-gP-RDv" id="wFt-vF-WR4"/>
                     </connections>
                 </viewController>
@@ -895,13 +919,23 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="gMF-Jp-1k6">
                                 <rect key="frame" x="30" y="33" width="20" height="20"/>
                             </activityIndicatorView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="99P-tA-DRW" customClass="GADBannerView">
+                                <rect key="frame" x="280" y="501" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5kq-KB-ISC"/>
+                                    <constraint firstAttribute="width" constant="320" id="VXs-b1-wcb"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2tS-91-4hj" firstAttribute="top" secondItem="S2N-0a-9bE" secondAttribute="bottom" id="4WK-aI-cCG"/>
                             <constraint firstItem="2tS-91-4hj" firstAttribute="leading" secondItem="8fb-dg-LA1" secondAttribute="leading" id="5bc-Hr-KXA"/>
                             <constraint firstItem="2tS-91-4hj" firstAttribute="top" secondItem="gMF-Jp-1k6" secondAttribute="bottom" constant="11" id="5yO-Pr-Aya"/>
+                            <constraint firstItem="99P-tA-DRW" firstAttribute="trailing" secondItem="2tS-91-4hj" secondAttribute="trailing" id="Ben-Kh-Cg9"/>
                             <constraint firstItem="S2N-0a-9bE" firstAttribute="top" secondItem="CUO-Im-3qS" secondAttribute="bottom" id="EaL-yK-KG7"/>
+                            <constraint firstItem="99P-tA-DRW" firstAttribute="bottom" secondItem="Jfs-Eb-P2C" secondAttribute="top" id="LFE-eT-P1F"/>
                             <constraint firstAttribute="trailing" secondItem="S2N-0a-9bE" secondAttribute="trailing" id="RNr-66-Fn3"/>
                             <constraint firstItem="gMF-Jp-1k6" firstAttribute="leading" secondItem="8fb-dg-LA1" secondAttribute="leadingMargin" constant="10" id="V3q-db-EJv"/>
                             <constraint firstItem="2tS-91-4hj" firstAttribute="leading" secondItem="S2N-0a-9bE" secondAttribute="leading" id="WJf-jc-psJ"/>
@@ -912,6 +946,7 @@
                     <tabBarItem key="tabBarItem" title="Web" image="tabbar_icons_web_small.png" id="OXw-iE-0lt"/>
                     <connections>
                         <outlet property="activity" destination="gMF-Jp-1k6" id="d0T-lA-hI0"/>
+                        <outlet property="bannerView" destination="99P-tA-DRW" id="rI8-Bg-GHg"/>
                         <outlet property="webview" destination="2tS-91-4hj" id="Hw9-Tj-04v"/>
                     </connections>
                 </viewController>

@@ -7,20 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <iAd/iAd.h>
 
-@interface comWebViewController : UIViewController <UIWebViewDelegate,ADBannerViewDelegate>{
+@interface comWebViewController : UIViewController <UIWebViewDelegate>{
     UIWebView* webview;
     UIActivityIndicatorView* activity;
     NSString *requestURL;
-    UIView *bannerView;
 }
 
 @property (atomic, strong) IBOutlet UIWebView *webview;
 @property (atomic, strong) IBOutlet UIActivityIndicatorView *activity;
 @property (strong, nonatomic) NSString *requestURL;
-@property (atomic ,strong) IBOutlet UIView *bannerView;
-
 
 - (IBAction)backBtn:(id)sender;
 - (IBAction)forwardBtn:(id)sender;

@@ -6,10 +6,13 @@
 //  Copyright (c) 2012 droidsoft.eu. All rights reserved.
 //
 
+@import GoogleMobileAds;
+
 #import "comListenViewController.h"
 #import "comPlayerViewController.h"
 #import "AsyncImageView.h"
 #import "comAppDelegate.h"
+#import "ServiceTools.h"
 
 
 @implementation comListenViewController
@@ -49,7 +52,10 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-    self.canDisplayBannerAds = true;
+    
+    GADBannerView *bannerView = [[GADBannerView alloc]initWithAdSize:kGADAdSizeBanner];
+    [self.tableView setTableFooterView:bannerView];
+    [ServiceTools GADInitialization:bannerView rootViewController:self];
 }
 
 #pragma mark - Table view data source

@@ -6,11 +6,17 @@
 //  Copyright (c) 2012 droidsoft.eu. All rights reserved.
 //
 
+@import GoogleMobileAds;
+
 #import "comKategorieListViewController.h"
 #import "comRadiaListViewController.h"
 #import "comPlayerViewController.h"
 #import "comAppDelegate.h"
+#import "ServiceTools.h"
 
+@interface comKategorieListViewController ()
+
+@end
 
 @implementation comKategorieListViewController
 
@@ -66,8 +72,10 @@
     comAppDelegate *delegate = (comAppDelegate*)[[UIApplication sharedApplication] delegate];
     delegate.table = self.tableView;
     
-    self.canDisplayBannerAds = true;
+    GADBannerView *bannerView = [[GADBannerView alloc]initWithAdSize:kGADAdSizeBanner];
+    [self.tableView setTableFooterView:bannerView];
     
+    [ServiceTools GADInitialization:bannerView rootViewController:self];
 }
 
 #pragma mark - Table view data source

@@ -11,7 +11,6 @@
 		341E63A914F41D5D00BD034F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 341E63A614F41D5D00BD034F /* Reachability.m */; };
 		341E63AB14F421AE00BD034F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341E63AA14F421AE00BD034F /* CFNetwork.framework */; };
 		341E63AD14F421FB00BD034F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341E63AC14F421FB00BD034F /* CoreFoundation.framework */; };
-		341E63B514F4228600BD034F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341E63B414F4228600BD034F /* MessageUI.framework */; };
 		341E63B714F422AE00BD034F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341E63B614F422AD00BD034F /* SystemConfiguration.framework */; };
 		342C2C4E1566E1AF00642692 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342C2C4D1566E1AF00642692 /* CoreMedia.framework */; };
 		346A73B9153AA04C009D1979 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 346A73B8153AA04C009D1979 /* AsyncImageView.m */; };
@@ -115,8 +114,11 @@
 		C4EF36E717F78DDE00FEF657 /* playios.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EF36E517F78DDE00FEF657 /* playios.png */; };
 		C4EF36E817F78DDE00FEF657 /* stopios.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EF36E617F78DDE00FEF657 /* stopios.png */; };
 		EB7E76761C8826AC002E3AE1 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7E76781C8826AC002E3AE1 /* Storyboard.storyboard */; };
+		EBA465AE1D350C1500944905 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = EBA465AD1D350C1500944905 /* Podfile */; };
+		EBA465B11D350CE400944905 /* ServiceTools.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA465B01D350CE400944905 /* ServiceTools.m */; };
+		EBA465B51D350DFD00944905 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBA465B41D350DFD00944905 /* GoogleService-Info.plist */; };
 		EBAA78B41C8703FC0034BCDD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBAA78B31C8703FC0034BCDD /* Launch Screen.storyboard */; };
-		EBAA78B61C8704380034BCDD /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAA78B51C8704380034BCDD /* iAd.framework */; };
+		F0D7F270EB983D73A586DC26 /* libPods-ABradio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E1EA867B2E0AE3E04AA9F33 /* libPods-ABradio.a */; };
 		F5777D7416DF9AA000B9DAD7 /* comPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F5777D7316DF9AA000B9DAD7 /* comPlayer.m */; };
 		F58298D5182C4BC10060C3C4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58298D4182C4BC10060C3C4 /* StoreKit.framework */; };
 		F58298D7182C50D70060C3C4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F58298D6182C50D70060C3C4 /* Images.xcassets */; };
@@ -160,7 +162,6 @@
 		341E63A614F41D5D00BD034F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		341E63AA14F421AE00BD034F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		341E63AC14F421FB00BD034F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		341E63B414F4228600BD034F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		341E63B614F422AD00BD034F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		342C2C4D1566E1AF00642692 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		346A73B7153AA04C009D1979 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
@@ -195,6 +196,8 @@
 		34DD5E66157B75D4007D4FD5 /* comContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comContactViewController.h; sourceTree = "<group>"; };
 		34DD5E67157B75D4007D4FD5 /* comContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = comContactViewController.m; sourceTree = "<group>"; };
 		34FA5B5414FAB058004AC849 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6D60519298425A420D7FB8C9 /* Pods-ABradio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABradio.release.xcconfig"; path = "Pods/Target Support Files/Pods-ABradio/Pods-ABradio.release.xcconfig"; sourceTree = "<group>"; };
+		9E1EA867B2E0AE3E04AA9F33 /* libPods-ABradio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ABradio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C411DB0018299AAE0036704C /* ipad-panel-all.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad-panel-all.png"; sourceTree = "<group>"; };
 		C4300507182526F80078917C /* delete_favourite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete_favourite.png; sourceTree = "<group>"; };
 		C4300508182526F80078917C /* add_favourite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_favourite.png; sourceTree = "<group>"; };
@@ -290,11 +293,16 @@
 		C4EF36E317F788A700FEF657 /* artwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artwork.png; sourceTree = "<group>"; };
 		C4EF36E517F78DDE00FEF657 /* playios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playios.png; sourceTree = "<group>"; };
 		C4EF36E617F78DDE00FEF657 /* stopios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopios.png; sourceTree = "<group>"; };
+		DFECDF1ECBD06946B7B8B12D /* Pods-ABradio.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABradio.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-ABradio/Pods-ABradio.distribution.xcconfig"; sourceTree = "<group>"; };
 		EB7E76771C8826AC002E3AE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Storyboard.storyboard; sourceTree = "<group>"; };
 		EB7E767A1C8826B8002E3AE1 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Storyboard.strings; sourceTree = "<group>"; };
 		EB7E767C1C8826CA002E3AE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Storyboard.strings; sourceTree = "<group>"; };
+		EBA465AD1D350C1500944905 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		EBA465AF1D350CE400944905 /* ServiceTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceTools.h; sourceTree = "<group>"; };
+		EBA465B01D350CE400944905 /* ServiceTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceTools.m; sourceTree = "<group>"; };
+		EBA465B41D350DFD00944905 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EBAA78B31C8703FC0034BCDD /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		EBAA78B51C8704380034BCDD /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		EFF55510019379C01E7EFB7C /* Pods-ABradio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABradio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ABradio/Pods-ABradio.debug.xcconfig"; sourceTree = "<group>"; };
 		F5777D7216DF9AA000B9DAD7 /* comPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = comPlayer.h; path = ../comPlayer.h; sourceTree = "<group>"; };
 		F5777D7316DF9AA000B9DAD7 /* comPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = comPlayer.m; path = ../comPlayer.m; sourceTree = "<group>"; };
 		F58298D4182C4BC10060C3C4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -302,7 +310,6 @@
 		F5C42273181C580700BBEC38 /* comInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comInfoViewController.h; sourceTree = "<group>"; };
 		F5C42274181C580700BBEC38 /* comInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = comInfoViewController.m; sourceTree = "<group>"; };
 		F5CA0B5A182AF6F500E01AFE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		F5DBEA87181CFCCE00603C9C /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		F5DBEAC7181D0E0F00603C9C /* 114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114x114.png; sourceTree = "<group>"; };
 		F5DBEAC8181D0E0F00603C9C /* 144x144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 144x144.png; sourceTree = "<group>"; };
 		F5DBEAC9181D0E0F00603C9C /* 1536x2008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1536x2008.png; sourceTree = "<group>"; };
@@ -341,14 +348,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBAA78B61C8704380034BCDD /* iAd.framework in Frameworks */,
 				F58298D5182C4BC10060C3C4 /* StoreKit.framework in Frameworks */,
 				F5CA0B5B182AF6F500E01AFE /* CoreData.framework in Frameworks */,
 				342C2C4E1566E1AF00642692 /* CoreMedia.framework in Frameworks */,
 				34FA5B5514FAB058004AC849 /* QuartzCore.framework in Frameworks */,
 				341BEF3D14F6DB71007DE2BF /* MediaPlayer.framework in Frameworks */,
 				341E63B714F422AE00BD034F /* SystemConfiguration.framework in Frameworks */,
-				341E63B514F4228600BD034F /* MessageUI.framework in Frameworks */,
 				3479195614F2DD220053B4B6 /* AVFoundation.framework in Frameworks */,
 				341E63AB14F421AE00BD034F /* CFNetwork.framework in Frameworks */,
 				341E63AD14F421FB00BD034F /* CoreFoundation.framework in Frameworks */,
@@ -356,6 +361,7 @@
 				3479195814F2DD320053B4B6 /* AudioToolbox.framework in Frameworks */,
 				3479190D14F2D7220053B4B6 /* UIKit.framework in Frameworks */,
 				3479191114F2D7220053B4B6 /* CoreGraphics.framework in Frameworks */,
+				F0D7F270EB983D73A586DC26 /* libPods-ABradio.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +381,8 @@
 		346BA875153F1F4E00A2E1FD /* common */ = {
 			isa = PBXGroup;
 			children = (
+				EBA465AF1D350CE400944905 /* ServiceTools.h */,
+				EBA465B01D350CE400944905 /* ServiceTools.m */,
 				346A73B7153AA04C009D1979 /* AsyncImageView.h */,
 				346A73B8153AA04C009D1979 /* AsyncImageView.m */,
 				341E63A514F41D5D00BD034F /* Reachability.h */,
@@ -386,11 +394,15 @@
 		347918FD14F2D7220053B4B6 = {
 			isa = PBXGroup;
 			children = (
+				EBA465B41D350DFD00944905 /* GoogleService-Info.plist */,
+				EBA465AD1D350C1500944905 /* Podfile */,
 				EBAA78B31C8703FC0034BCDD /* Launch Screen.storyboard */,
+				EB7E76781C8826AC002E3AE1 /* Storyboard.storyboard */,
 				341E63A114F41D5D00BD034F /* Classes */,
 				3479191214F2D7220053B4B6 /* ABradio */,
 				3479190B14F2D7220053B4B6 /* Frameworks */,
 				3479190914F2D7220053B4B6 /* Products */,
+				71C0F04A0A0B516DCDCEE7DB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -405,14 +417,12 @@
 		3479190B14F2D7220053B4B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EBAA78B51C8704380034BCDD /* iAd.framework */,
 				F58298D4182C4BC10060C3C4 /* StoreKit.framework */,
 				F5CA0B5A182AF6F500E01AFE /* CoreData.framework */,
 				342C2C4D1566E1AF00642692 /* CoreMedia.framework */,
 				34FA5B5414FAB058004AC849 /* QuartzCore.framework */,
 				341BEF3C14F6DB71007DE2BF /* MediaPlayer.framework */,
 				341E63B614F422AD00BD034F /* SystemConfiguration.framework */,
-				341E63B414F4228600BD034F /* MessageUI.framework */,
 				341E63AC14F421FB00BD034F /* CoreFoundation.framework */,
 				341E63AA14F421AE00BD034F /* CFNetwork.framework */,
 				3479195714F2DD320053B4B6 /* AudioToolbox.framework */,
@@ -420,7 +430,7 @@
 				3479190C14F2D7220053B4B6 /* UIKit.framework */,
 				3479190E14F2D7220053B4B6 /* Foundation.framework */,
 				3479191014F2D7220053B4B6 /* CoreGraphics.framework */,
-				F5DBEA87181CFCCE00603C9C /* SpriteKit.framework */,
+				9E1EA867B2E0AE3E04AA9F33 /* libPods-ABradio.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -429,7 +439,6 @@
 			isa = PBXGroup;
 			children = (
 				EBAA78B71C8728250034BCDD /* controller */,
-				EB7E76781C8826AC002E3AE1 /* Storyboard.storyboard */,
 				3479B9C114F7CFB700525638 /* images_old */,
 				3479191B14F2D7220053B4B6 /* comAppDelegate.h */,
 				3479191C14F2D7220053B4B6 /* comAppDelegate.m */,
@@ -495,6 +504,16 @@
 				C4CC845B180D016A004E3EDE /* iphone5 */,
 			);
 			name = iPhone;
+			sourceTree = "<group>";
+		};
+		71C0F04A0A0B516DCDCEE7DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFF55510019379C01E7EFB7C /* Pods-ABradio.debug.xcconfig */,
+				6D60519298425A420D7FB8C9 /* Pods-ABradio.release.xcconfig */,
+				DFECDF1ECBD06946B7B8B12D /* Pods-ABradio.distribution.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		C4CC845B180D016A004E3EDE /* iphone5 */ = {
@@ -679,9 +698,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3479194F14F2D7220053B4B6 /* Build configuration list for PBXNativeTarget "ABradio" */;
 			buildPhases = (
+				6C781C280A16EE31F0A049D6 /* [CP] Check Pods Manifest.lock */,
 				3479190414F2D7220053B4B6 /* Sources */,
 				3479190514F2D7220053B4B6 /* Frameworks */,
 				3479190614F2D7220053B4B6 /* Resources */,
+				35109BC6166408D4EBF3193C /* [CP] Embed Pods Frameworks */,
+				C2C3E4D21109BF45C44447D1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -698,9 +720,9 @@
 		347918FF14F2D7220053B4B6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = com;
+				CLASSPREFIX = "";
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = droidsoft.eu;
+				ORGANIZATIONNAME = "Damek Jan";
 				TargetAttributes = {
 					3479190714F2D7220053B4B6 = {
 						DevelopmentTeam = GR74KSG8M9;
@@ -758,6 +780,7 @@
 				C4CC8479180D0238004E3EDE /* botoom_panel.jpg in Resources */,
 				F5DBEAF8181D0E0F00603C9C /* iconabradio57.png in Resources */,
 				F5DBEB09181D0E0F00603C9C /* program.png in Resources */,
+				EBA465B51D350DFD00944905 /* GoogleService-Info.plist in Resources */,
 				C45CC32E17F793AB00FED58E /* soundios.png in Resources */,
 				C4CC8488180D0238004E3EDE /* btn_sleep.png in Resources */,
 				346BA871153F1EF300A2E1FD /* Localizable.strings in Resources */,
@@ -811,6 +834,7 @@
 				C4D90C5B157B5A5600182CF2 /* digiscope-logo.png in Resources */,
 				C4CC848A180D0238004E3EDE /* radio_box.png in Resources */,
 				C4D90C61157B63CD00182CF2 /* ipad_sleep_bg.png in Resources */,
+				EBA465AE1D350C1500944905 /* Podfile in Resources */,
 				C4C90C38157B70D900164E81 /* ipad_program.png in Resources */,
 				C4B3F1B9157BAB9000C84EA7 /* pozadi_contact_view.png in Resources */,
 				C4CC847D180D0238004E3EDE /* btn_domu.png in Resources */,
@@ -861,6 +885,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		35109BC6166408D4EBF3193C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ABradio/Pods-ABradio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C781C280A16EE31F0A049D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C2C3E4D21109BF45C44447D1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ABradio/Pods-ABradio-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3479190414F2D7220053B4B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -877,6 +949,7 @@
 				346BA88615431DA400A2E1FD /* comFavoriteViewController.m in Sources */,
 				346BA88B15431DD900A2E1FD /* comListenViewController.m in Sources */,
 				346BA88F1544240D00A2E1FD /* comWebViewController.m in Sources */,
+				EBA465B11D350CE400944905 /* ServiceTools.m in Sources */,
 				34DD5E68157B75D4007D4FD5 /* comContactViewController.m in Sources */,
 				F5777D7416DF9AA000B9DAD7 /* comPlayer.m in Sources */,
 			);
@@ -911,6 +984,7 @@
 				EB7E767C1C8826CA002E3AE1 /* en */,
 			);
 			name = Storyboard.storyboard;
+			path = ABradio;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -997,8 +1071,10 @@
 		};
 		3479195014F2D7220053B4B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFF55510019379C01E7EFB7C /* Pods-ABradio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = ABradio/ABradio.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1013,7 +1089,7 @@
 					"$(inherited)",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "${inherited}";
 				PRODUCT_BUNDLE_IDENTIFIER = eu.damek.radio.ABradio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1026,12 +1102,14 @@
 		};
 		3479195114F2D7220053B4B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D60519298425A420D7FB8C9 /* Pods-ABradio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = ABradio/ABradio.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jan Damek (GR74KSG8M9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jan Damek (GR74KSG8M9)";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/ABradio/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1042,11 +1120,11 @@
 					"$(inherited)",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "${inherited}";
 				PRODUCT_BUNDLE_IDENTIFIER = eu.damek.radio.ABradio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "5f22a4ce-63c3-43e7-a9e6-6bb251e8b360";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5f22a4ce-63c3-43e7-a9e6-6bb251e8b360";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
@@ -1091,12 +1169,14 @@
 		};
 		C4C0BC8B159A50CA00ECDA45 /* Distribution */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFECDF1ECBD06946B7B8B12D /* Pods-ABradio.distribution.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = ABradio/ABradio.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jan Damek (GR74KSG8M9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jan Damek (GR74KSG8M9)";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/ABradio/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1107,11 +1187,11 @@
 					"$(inherited)",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "${inherited}";
 				PRODUCT_BUNDLE_IDENTIFIER = eu.damek.radio.ABradio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "5f22a4ce-63c3-43e7-a9e6-6bb251e8b360";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5f22a4ce-63c3-43e7-a9e6-6bb251e8b360";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
