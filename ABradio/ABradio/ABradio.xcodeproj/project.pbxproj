@@ -1108,8 +1108,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = ABradio/ABradio.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Jan Damek (GR74KSG8M9)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jan Damek (GR74KSG8M9)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/ABradio/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1175,8 +1175,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = ABradio/ABradio.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Jan Damek (GR74KSG8M9)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jan Damek (GR74KSG8M9)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/ABradio/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
