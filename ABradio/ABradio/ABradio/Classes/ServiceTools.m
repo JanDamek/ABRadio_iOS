@@ -13,7 +13,6 @@
 @implementation ServiceTools
 
 +(void) GADInitialization:(GADBannerView*)bannerView rootViewController:(UIViewController*)rootViewController{
-    NSLog(@"Google Mobile Ads SDK version: %@", [GADRequest sdkVersion]);
     bannerView.adUnitID = @"ca-app-pub-9508528448741167/1944947856";
     bannerView.rootViewController = rootViewController;
     GADRequest *request = [GADRequest request];

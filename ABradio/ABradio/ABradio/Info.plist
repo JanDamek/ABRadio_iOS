@@ -21,11 +21,11 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.1</string>
+	<string>1.2.0.1</string>
 	<key>FirstViewController</key>
 	<string>First View</string>
 	<key>LSApplicationCategoryType</key>
@@ -34,6 +34,8 @@
 	<true/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
 		<key>NSExceptionDomains</key>
 		<dict>
 			<key>abradio.cz</key>
@@ -46,9 +48,11 @@
 				<string>TLSv1.1</string>
 			</dict>
 		</dict>
-        <key>NSAllowsArbitraryLoads</key>
-        <true/>
 	</dict>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>Is used for stream audio, if is supported.</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Isn't use calendars data.</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>audio</string>

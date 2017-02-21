@@ -74,7 +74,6 @@
     
     GADBannerView *bannerView = [[GADBannerView alloc]initWithAdSize:kGADAdSizeBanner];
     [self.tableView setTableFooterView:bannerView];
-    
     [ServiceTools GADInitialization:bannerView rootViewController:self];
 }
 

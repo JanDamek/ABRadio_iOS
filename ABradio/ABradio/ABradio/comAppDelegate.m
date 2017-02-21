@@ -6,6 +6,8 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
+@import Firebase;
+
 #import "comAppDelegate.h"
 #import "comFavoriteViewController.h"
 #import "comWebViewController.h"
@@ -19,13 +21,6 @@ NSString *kOblibeneFile     = @"oblibene.dat";
 NSString *kPoslouchaneFile  = @"poslouchane.dat";
 NSString *kCategoryFile     = @"category.dat";
 NSString *kURLXMLData       = @"http://m.abradio.cz/export/xmlsearch/?q=";
-
-//#pragma mark -
-//@interface comAppDelegate (Player)
-//- (void)handleTimedMetadata:(AVMetadataItem*)timedMetadata;
-//- (void)assetFailedToPrepareForPlayback:(NSError *)error;
-//- (void)prepareToPlayAsset:(AVURLAsset *)asset withKeys:(NSArray *)requestedKeys;
-//@end
 
 @implementation comAppDelegate
 
@@ -65,16 +60,9 @@ NSString *kURLXMLData       = @"http://m.abradio.cz/export/xmlsearch/?q=";
     UITabBar *tb = [UITabBar appearance];
     UINavigationBar *nb = [UINavigationBar appearance];
     UIBarButtonItem *bb = [UIBarButtonItem appearance];
-    if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
-        // Load resources for iOS 6.1 or earlier
-        [tb setTintColor:[UIColor blackColor]];
-        [nb setTintColor:[UIColor blackColor]];
-        [bb setTintColor:[UIColor blackColor]];
-    }else{
-        [tb setTintColor:[UIColor whiteColor]];
-        [nb setTintColor:[UIColor whiteColor]];
-        [bb setTintColor:[UIColor whiteColor]];
-    }
+    [tb setTintColor:[UIColor whiteColor]];
+    [nb setTintColor:[UIColor whiteColor]];
+    [bb setTintColor:[UIColor whiteColor]];
     _playerClass = [[comPlayer alloc]initWithURL:kURLXMLData];
     _playerClass.delegate = self;
     
@@ -132,20 +120,12 @@ NSString *kURLXMLData       = @"http://m.abradio.cz/export/xmlsearch/?q=";
     [[UIApplication sharedApplication] setStatusBarHidden:NO];
     
     NSError *sessionError = nil;
-//    [[AVAudioSession sharedInstance] setDelegate:self];
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&sessionError];
-//    UInt32 doChangeDefaultRoute = 1;
-//    AudioSessionSetProperty(kAudioSessionProperty_OverrideCategoryDefaultToSpeaker, sizeof(doChangeDefaultRoute), &doChangeDefaultRoute);
     
     [self.window makeKeyAndVisible];
     
     [_ani setActivityIndicatorViewStyle: UIActivityIndicatorViewStyleWhiteLarge];
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        _ani.center = CGPointMake(160, 260);
-    }else{
-        _ani.center = CGPointMake(384, 512);
-        
-    }
+    _ani.center = CGPointMake(UIScreen.mainScreen.bounds.size.width / 2, UIScreen.mainScreen.bounds.size.height / 2);
     _ani.layer.cornerRadius = 10;
     [_ani setBackgroundColor:[UIColor grayColor]];
     
@@ -154,14 +134,7 @@ NSString *kURLXMLData       = @"http://m.abradio.cz/export/xmlsearch/?q=";
     [_ani setHidden:YES];
     [_ani stopAnimating];
     
-//    [GAI sharedInstance].optOut =    ![[NSUserDefaults standardUserDefaults] boolForKey:kAllowTracking];
-    // Initialize Google Analytics with a 120-second dispatch interval. There is a
-    // tradeoff between battery usage and timely dispatch.
-//    [GAI sharedInstance].dispatchInterval = 120;
-//    [GAI sharedInstance].trackUncaughtExceptions = YES;
-//    self.tracker = [[GAI sharedInstance] trackerWithName:@"ABRadio iOS Player"
-//                                              trackingId:kTrackingId];
-    
+    [FIRApp configure];
     return YES;
 }
 
